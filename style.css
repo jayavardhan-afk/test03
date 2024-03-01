@@ -1,0 +1,117 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #211951;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main h1{
+    color: white;
+    text-align: center;
+    font-size: 45px;
+}
+button{
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 0 8px 8px 0  ;
+    z-index: 5;
+    position: relative;
+    left: 5px;
+    height: 3.8em;
+    outline: none;
+}
+button:hover{
+   cursor: pointer;
+}
+input{
+    padding: 10px;
+    border-radius:8px 0 0 8px ;
+   
+   position: relative;
+   
+    outline: none;
+    width: 35vw;
+    height: 3.5em;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    height: 22rem;
+    width: 20rem;
+    border: 2px solid transparent;
+    box-shadow: 5px 5px 5px  #826fff31;
+    position:relative;
+    top: 2.5rem;
+    background-color: #15f5b9a0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4.5rem;
+   
+    
+}
+.boxes .box h1{
+    text-align: center;
+    color:#ffffff;
+    font-size: 2.0em;
+}
+.boxes .box .img{
+    top: -10px;
+    position: relative;
+    height: 80%;
+    width: auto;
+    border: 2px solid black;
+    background-size: cover;
+    cursor: pointer;
+    outline: none;
+    
+}
+.overbox{
+    height: 50px;
+    width: 50px;
+    background-color:#836FFF;
+    border: 5px solid transparent;
+    box-shadow: 5px 5px 0 #655f8862;
+    position: absolute;
+    top: 60px;
+    left: -80px;
+    width: 150%;
+    height: 120%;
+    border-radius: 8px;
+    display: none;
+    cursor: alias;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 50;
+}
+
+.box:hover .overbox{
+    display: block;
+}
+.overbox h3{
+    color: rgba(58, 52, 52, 0.934);
+}
+.overbox h2{
+    text-align: left;
+}
+.yt{
+    
+    position: absolute;
+    left: 180px;
+    top: 50px;
+}
